@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 :root {
@@ -20,6 +21,12 @@ body {
   --bg-btn: #b28756;
   --color-btn: #ffffff;
   --bg-pointer: #b28756;
+  --color-desc: #cccccc;
+  --bg-light: #f7f7f7;
+  --color-light: #000000;
+  --bg-dark: #000000;
+  --color-dark: #ffffff;
+  --service-p: #999999;
 }
 /* HEADER */
 header {
@@ -81,6 +88,19 @@ header {
 }
 
 /* MAIN */
+
+/* button */
+.button {
+  display: inline-block;
+  background-color: var(--bg-btn);
+  color: var(--color-btn);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
 /* Banner */
 .banner {
   height: calc(100vh - 100px);
@@ -127,17 +147,6 @@ header {
   margin-top: 20px;
 }
 
-.banner a {
-  display: flex;
-  background-color: var(--bg-btn);
-  color: var(--color-btn);
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  margin-top: 30px;
-  border-radius: 20px;
-}
 .banner .sliders-pointers {
   width: 100vw;
   height: 10px;
@@ -163,4 +172,99 @@ header {
 
 .banner .pointer:nth-child(1) {
   background-color: var(--bg-pointer);
+}
+
+.default {
+  padding: 50px 0px 50px 0px;
+}
+
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-desc {
+  font-size: 12px;
+  color: var(--color-desc);
+  margin: 10px 0px 47px 0px;
+}
+.default .section-body {
+  margin: auto;
+  max-width: 1140px;
+}
+
+.default.light {
+  background-color: var(--bg-light);
+}
+
+.default.light .section-title,
+.default.light .section-body {
+  color: var(--color-light);
+}
+
+.default.dark {
+  background-color: var(--bg-dark);
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+  color: var(--color-dark);
+}
+
+/**** SECTION ABOUT US ******/
+.setion-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+}
+
+.section-aboutus--left p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-aboutus--right {
+  width: 500px;
+  text-align: center;
+}
+
+.section-aboutus--right img {
+  width: 400px;
+  box-shadow: 0px 5px 10px #333333;
+}
+
+/***** SECTION SERVICES ******/
+
+.section-services {
+  display: flex;
+}
+
+.section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333333;
+  padding: 15px;
+}
+
+.section-service:first-child {
+  border-left: 1px solid #333333;
+}
+.section-service h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.section-service p {
+  margin-top: 10px;
+  color: var(--service-p);
+  font-size: 12px;
 }
