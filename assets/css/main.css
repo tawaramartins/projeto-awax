@@ -27,6 +27,13 @@ body {
   --bg-dark: #000000;
   --color-dark: #ffffff;
   --service-p: #999999;
+  --bg-filters: #eeeeee;
+  --color-filters: #555555;
+  --color-info: #ffffff;
+  --bg-team: #ffffff;
+  --color-role: #999999;
+  --bg-social: #b28756;
+  --color-client: #555555;
 }
 /* HEADER */
 header {
@@ -267,4 +274,324 @@ header {
   margin-top: 10px;
   color: var(--service-p);
   font-size: 12px;
+}
+
+/**** SECTION OUR PROJECTS *****/
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-projects--filters {
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  background-color: var(--bg-filters);
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+  list-style: none;
+}
+
+.section-projects--filters li {
+  display: inline-block;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-left: 1px solid #cccccc;
+  color: var(--color-filters);
+  border-bottom: 3px solid #eeeeee;
+  cursor: pointer;
+}
+
+.section-projects--filters li:hover {
+  border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters li:first-child {
+  border-left: 0;
+}
+
+/*** SECTION PROJECTS PHOTOS ****/
+.section-projects--photos {
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section-projects--photo {
+  width: 280px;
+}
+
+.section-projects--photoarea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoarea img {
+  width: inherit;
+  height: inherit;
+}
+
+.section-project--photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: inherit;
+  height: inherit;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-info);
+}
+
+.section-project--photoinfo h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-project--photoinfo {
+  display: flex;
+}
+
+/*** SECTION TEAM ****/
+
+.bg-team {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 0px 50px 0px;
+}
+
+.section-team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+.section-team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: var(--bg-team);
+}
+
+.section-team .slidearea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: var(--slide-color);
+  padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+  margin-top: 30px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b28756;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.section-team-area .pointer:hover {
+  background-color: var(--bg-pointer);
+}
+
+.section-team-area .pointer:nth-child(1) {
+  background-color: var(--bg-pointer);
+}
+
+.section-team--avatar {
+  width: 150px;
+  height: auto;
+}
+
+.section-team--name {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.section-team--role {
+  color: #000000;
+  font-size: 13px;
+  color: var(--color-role);
+  margin-top: 5px;
+}
+
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-team--social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #cccccc;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
+.section-team--social a:hover {
+  background-color: var(--bg-social);
+}
+
+/*** HAPPY CLIENTS ***/
+
+.section-client-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.section-client--avatar {
+  margin-top: 10px;
+}
+.section-client--name {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-client--role {
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.section-client--review {
+  text-align: center;
+  color: var(--color-client);
+  line-height: 22px;
+  padding: 15px;
+}
+
+.section-client--review img {
+  margin: 15px;
+}
+
+.section-client-area .sliders-pointers {
+  margin-top: 30px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-client-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b28756;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.section-client-area .pointer:hover {
+  background-color: var(--bg-pointer);
+}
+
+.section-client-area .pointer:nth-child(1) {
+  background-color: var(--bg-pointer);
+}
+
+/*** SECTION ENTERPRISE ***/
+.section-client-enterprise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-enterprise {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 35px;
+}
+
+/****SECTION PRICE*****/
+.section-price-tablearea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+}
+.section-price-tablearea div {
+  background-color: #fffdfd;
+  width: 280px;
+  height: 350px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.section-price-tablearea h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-price-tablearea span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.section-price-tablearea p {
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.section-price-tablearea ul li {
+  list-style: none;
+  color: #555555;
+}
+
+.section-price-tablearea .price-button {
+  background-color: #2e2d2d;
+  width: 600px;
+  height: 180px;
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
