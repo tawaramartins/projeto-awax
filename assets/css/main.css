@@ -546,52 +546,60 @@ header {
   padding: 35px;
 }
 
-/****SECTION PRICE*****/
-.section-price-tablearea {
+/**** SECTION PRICE *****/
+.section-price {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1140px;
-}
-.section-price-tablearea div {
-  background-color: #fffdfd;
-  width: 280px;
-  height: 350px;
-  margin: 15px;
-  padding: 25px;
-  border-radius: 4px;
   text-align: center;
-  line-height: 30px;
 }
-
-.section-price-tablearea h4 {
+.section-price--item {
+  background-color: #ffffff;
+  width: 238px;
+  height: 364px;
+  margin: 10px;
+  padding: 28px;
+  border-radius: 3px;
+}
+.section-price--item-name {
   text-transform: uppercase;
+  font-size: 13px;
   font-weight: 600;
+  line-height: 40px;
 }
 
-.section-price-tablearea span {
-  font-size: 25px;
+.section-price--item-monay {
+  font-size: 26px;
   font-weight: bold;
 }
-
-.section-price-tablearea p {
+.section-price--item-period {
   color: #999999;
-  font-weight: normal;
+  text-transform: uppercase;
   font-size: 10px;
-  text-transform: uppercase;
+  margin-bottom: 9px;
 }
-
-.section-price-tablearea ul li {
+.section-price--item-point ul {
   list-style: none;
-  color: #555555;
 }
 
-.section-price-tablearea .price-button {
-  background-color: #2e2d2d;
-  width: 600px;
-  height: 180px;
-  padding: 15px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px;
+.section-price--item-point li {
+  padding: 7px;
+  color: #444444;
 }
+
+.button-dark {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.button-dark:hover {
+  background-color: #b28756;
+}
+/**** SECTION PREMIUM *******/
