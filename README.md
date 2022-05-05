@@ -1,8 +1,8 @@
-# Awax
+<h1 align="center">Awax</h1>
 
 <h4 align="center">Finalizado 🚀</h4>
 
-Projeto prático do curso [B7Web](https://alunos.b7web.com.br/curso/html5-e-css3/o-que-e-html-e-pra-que-serve).
+<p align="center">Projeto prático do curso <a href="https://alunos.b7web.com.br/curso/html5-e-css3/o-que-e-html-e-pra-que-serve">B7Web</a></p>
 
 ## Índice
 
@@ -28,7 +28,7 @@ Os usuários devem ser capazes de:
 
 ### 📌 Screenshot
 
-<img src="/design/awax-desktop" height="250px">
+<img src="./design/layout-desktop.png" alt="Awax" height="990px">
 
 ## Meu processo
 
