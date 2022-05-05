@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./design/layout-desktop.png" alt="Awax" height="990px">
+</div>
+
 <h1 align="center">Awax</h1>
 
 <h4 align="center">Finalizado 🚀</h4>
@@ -8,7 +12,6 @@
 
 - [Visão geral](#visão-geral)
   - [O desafio](#o-desafio)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [Meu processo](#meu-processo)
   - [Criado com](#integrado)
@@ -25,10 +28,6 @@ Os usuários devem ser capazes de:
 
 - Veja o layout ideal, dependendo do tamanho da tela do dispositivo
 - Ver estados de foco para elementos interativos
-
-### 📌 Screenshot
-
-<img src="./design/layout-desktop.png" alt="Awax" height="990px">
 
 ## Meu processo
 
