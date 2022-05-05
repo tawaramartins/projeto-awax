@@ -12,7 +12,6 @@
 
 - [Visão geral](#visão-geral)
   - [O desafio](#o-desafio)
-  - [Links](#links)
 - [Meu processo](#meu-processo)
   - [Criado com](#integrado)
   - [O que aprendi](#o-que-aprendi)
