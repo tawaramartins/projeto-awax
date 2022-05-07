@@ -62,6 +62,10 @@ header {
 }
 
 /* MENU */
+.menu-opener {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -225,7 +229,7 @@ header {
 }
 
 /**** SECTION ABOUT US ******/
-.setion-aboutus {
+.section-aboutus {
   display: flex;
 }
 
@@ -957,3 +961,84 @@ header {
   font-weight: 600;
 
 }
+
+
+/******* MEDIA QUERIYS **********/
+
+/*** TABLET ****/
+@media (min-width:450px) and (max-width: 800px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 40px;
+    margin-right: 30px;
+  }
+  
+  nav {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 60vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+
+  }
+
+  .menu li a {
+    font-weight: bold;
+    height: 70px;
+    font-size: 20px;
+    margin-left: 50px;
+    border: 0;
+  }
+  .menu li a:hover {
+    color:#b28756;
+    border: 0;
+  }
+
+  .section-aboutus {
+    flex-direction: column;
+  }
+  .section-aboutus--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+  .section-aboutus--right {
+    width: auto;
+  }
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 50%;
+  }
+  .section-team {
+    max-width: 580px;
+  }
+  .section-price {
+    flex-wrap: wrap;
+  }
+
+  .section-map {
+    padding: 30px;
+  }
+  .section-social--area {
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+  }
+ 
+}
+
+/*** PHONE ****/
