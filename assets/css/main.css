@@ -1042,3 +1042,136 @@ header {
 }
 
 /*** PHONE ****/
+
+@media (max-width: 450px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 40px;
+    margin-right: 30px;
+  }
+  
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 60vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+
+  }
+
+  .menu li a {
+    font-weight: bold;
+    height: 70px;
+    font-size: 15px;
+    margin-left: 30px;
+    border: 0;
+  }
+  .menu li a:hover {
+    color:#b28756;
+    border: 0;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner h2 {
+    font-size: 15px;
+  }
+  .section-aboutus {
+    flex-direction: column;
+  }
+  .section-aboutus--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+  .section-aboutus--right {
+    width: auto;    
+  }
+  .section-aboutus--right img {
+    width: 260px;
+  }
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 100%;
+  }
+
+.section-client-enterprise {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-client-enterprise img {
+  margin: 10px;
+}
+
+.section-premium .slidearea {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-facts {
+  flex-direction: column;
+}
+
+.section-social-media {
+  margin: auto;
+}
+
+.section-social {
+  width: 50px;
+  margin: auto;
+}
+.section-contact {
+  padding: 40px;
+  flex-direction: column;
+}
+  .section-projects--filters {
+    margin: 0px 30px 0px 30px;
+  }
+
+  .section-team {
+    max-width: 280px;
+  }
+
+  .section-price {
+    flex-wrap: wrap;
+  }
+
+  .section-map {
+    padding: 0;
+  }
+  .section-social--area {
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+  }
+ .section-social--area {
+  padding: 10px;
+ }
+
+ .section-info--area {
+   padding: 15px;
+   font-size: 10px;
+ }
+ .section-subscribe--area {
+  width: 300px;
+ }
+}
